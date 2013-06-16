@@ -1,0 +1,8 @@
+server: "irc.freenode.net"
+nick: "ENTER_BOT_NICK"
+pass: "PASSWORD_IF_REQUIRED"
+port: 6667
+channel: "CHANNEL"
+join: ture   # notice or join
+ssl:  false  # server use ssl
+
