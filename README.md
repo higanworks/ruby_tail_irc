@@ -15,7 +15,7 @@ $ bundle install
 ### Depends 
 
 - gem[`carrier-pigeon`]
-
+- gem[`irc-socket`]
 
 ## configration
 
@@ -24,13 +24,22 @@ Copy `config/irc.yml.sample`  to `config/irc.yml` and fill it for your irc serve
 
 ## Usage
 
+- send_irc.rb :  uses `carrier-pigeon`
+- send_irc_sock.rb : uses `irc-socket`, 
+
 ### tail -f
 
 `tail -f $file | send_irc.rb`
 
+or 
+
+`tail -f $file | send_sock.rb`
+
 ### send cmdline stdout
 
 `chef-cient | ./send_irc.rb`
+
+`chef-cient | ./send_irc_sock.rb`
 
 #### irc output example
 

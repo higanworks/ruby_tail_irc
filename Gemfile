@@ -2,3 +2,4 @@
 source "https://rubygems.org"
 
 gem 'carrier-pigeon'
+gem 'irc-socket'
