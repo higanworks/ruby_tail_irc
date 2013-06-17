@@ -5,20 +5,32 @@
 STDIN send to irc.
 
 
+## Install
+
+```
+$ gem install bunder --no-ri --no-rdoc
+$ bundle install
+```
+
+### Depends 
+
+- gem[`carrier-pigeon`]
+
+
 ## configration
 
-Show `config/irc.yml.sample` and fill.
+Copy `config/irc.yml.sample`  to `config/irc.yml` and fill it for your irc server.
 
 
 ## Usage
 
 ### tail -f
 
-`tail -f $file | send_irv.rb`
+`tail -f $file | send_irc.rb`
 
 ### send cmdline stdout
 
-`chef-cient | ./send_irv.rb`
+`chef-cient | ./send_irc.rb`
 
 #### irc output example
 
