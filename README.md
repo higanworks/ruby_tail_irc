@@ -37,6 +37,7 @@ or
 
 ### send cmdline stdout
 
+
 `chef-cient | ./send_irc.rb`
 
 `chef-cient | ./send_irc_sock.rb`
@@ -50,3 +51,10 @@ or
 17:42 irclogger: [2013-06-16T17:42:03+09:00] INFO: Run List is [role[base_smartos], role[monit_smartos], role[postgres-server], role[app_server_common], role[sandbox_update]]
 -- snip --
 ```
+
+
+### use filter
+
+set whitefilter to config.yml. (set false to disable feature)
+
+this paramater is used as Regexp string.
