@@ -13,5 +13,11 @@ require 'yaml'
 sleep 1
 
 $stdin.each_line do |line|
-  @client.notice "##{@irc['channel']}", line
+  if @irc['whitefilter']
+    if line =~ Regexp.new(@irc['whitefilter'])
+      @client.notice "##{@irc['channel']}", line
+    end
+  else
+    @client.notice "##{@irc['channel']}", line
+  end
 end

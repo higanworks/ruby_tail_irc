@@ -5,4 +5,5 @@ port: 6667
 channel: "CHANNEL"
 join: ture   # notice or join
 ssl:  false  # server use ssl
+whitefilter: false  # send filter
 
